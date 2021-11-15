@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bry-Zs-aAn">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="BYZ-38-t0r" customClass="MapViewController" customModule="gdzietentramwaj" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="75V-qV-ZAE">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="75V-qV-ZAE" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="6qQ-Qh-kmS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="75V-qV-ZAE" secondAttribute="trailing" id="9Sa-8M-P2W"/>
+                            <constraint firstItem="75V-qV-ZAE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Tj2-ku-JHq"/>
+                            <constraint firstItem="75V-qV-ZAE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cKx-ZS-UUZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WWg-qh-zOg">
+                        <barButtonItem key="leftBarButtonItem" image="arrow.counterclockwise" catalog="system" id="jqU-hV-AT8">
+                            <connections>
+                                <action selector="reloadButtonAction:" destination="BYZ-38-t0r" id="SpQ-8G-w4Y"/>
+                            </connections>
+                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="gearshape" catalog="system" id="0Xl-4i-CBs">
+                                <connections>
+                                    <action selector="settingsButtonAction:" destination="BYZ-38-t0r" id="hiE-Ie-zBr"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="star" catalog="system" id="OL5-JC-Lpl">
+                                <connections>
+                                    <action selector="favoriteButtonAction:" destination="BYZ-38-t0r" id="gnM-57-4wj"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="favoriteButton" destination="OL5-JC-Lpl" id="cYi-75-qWa"/>
+                        <outlet property="map" destination="75V-qV-ZAE" id="QWU-Gb-8gT"/>
+                        <outlet property="reloadButton" destination="jqU-hV-AT8" id="1lp-Hg-vjK"/>
+                        <segue destination="VfP-Ab-yyK" kind="show" id="aAh-Y8-xJL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038" y="90"/>
+        </scene>
+        <!--Choose Favorite Lines-->
+        <scene sceneID="tsJ-ZW-qWb">
+            <objects>
+                <collectionViewController storyboardIdentifier="FavoritesViewController" id="VfP-Ab-yyK" customClass="FavoritesViewController" customModule="gdzietentramwaj" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="I9E-Wa-NFv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="x0z-RT-pCG">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavVehicleCellView" id="SOq-I7-KgM" customClass="FavVehicleCellView" customModule="gdzietentramwaj" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="N55-Ih-1Xs">
+                                    <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qN-53-cVy">
+                                            <rect key="frame" x="29" y="44" width="70" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="70" id="EwD-0t-Moi"/>
+                                                <constraint firstAttribute="height" constant="40" id="N6H-XM-6ud"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2qN-53-cVy" firstAttribute="centerY" secondItem="N55-Ih-1Xs" secondAttribute="centerY" id="fEC-Ur-Thl"/>
+                                        <constraint firstItem="2qN-53-cVy" firstAttribute="centerX" secondItem="N55-Ih-1Xs" secondAttribute="centerX" id="yM4-Bb-HoL"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="vehicleButton" destination="2qN-53-cVy" id="RlG-47-iNb"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="VfP-Ab-yyK" id="TXv-Qy-rVr"/>
+                            <outlet property="delegate" destination="VfP-Ab-yyK" id="pwS-Js-BpO"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Choose Favorite Lines" id="ou4-cH-A7d"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wgx-m9-gO1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1900.0000000000002" y="89.732142857142847"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="UtV-tN-Lg6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bry-Zs-aAn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Rop-Q4-sBf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gGF-rC-P2J"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eIf-Qp-6J6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="90.401785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

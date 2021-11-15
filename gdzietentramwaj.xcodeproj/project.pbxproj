@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65044BB3272C982600A6EF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65044BB2272C982600A6EF74 /* AppDelegate.swift */; };
+		65044BB5272C982600A6EF74 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65044BB4272C982600A6EF74 /* SceneDelegate.swift */; };
+		65044BB7272C982600A6EF74 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65044BB6272C982600A6EF74 /* MapViewController.swift */; };
+		65044BBA272C982600A6EF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65044BB8272C982600A6EF74 /* Main.storyboard */; };
+		65044BBC272C982700A6EF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65044BBB272C982700A6EF74 /* Assets.xcassets */; };
+		65044BCB272C9DBC00A6EF74 /* WarsawVehicleDataObtainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65044BCA272C9DBC00A6EF74 /* WarsawVehicleDataObtainer.swift */; };
+		65044BCE272C9DDB00A6EF74 /* VehicleModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65044BCC272C9DDB00A6EF74 /* VehicleModel.xcdatamodeld */; };
+		65044BD1272C9ECE00A6EF74 /* VehicleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65044BD0272C9ECE00A6EF74 /* VehicleData.swift */; };
+		6565A6AD27333BEB00F0228B /* VehicleAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6565A6AC27333BEB00F0228B /* VehicleAnnotation.swift */; };
+		657374B827349587008DF8E4 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657374B727349587008DF8E4 /* DataController.swift */; };
+		65E28D7D273B2D0C00EDB6C6 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E28D7C273B2D0C00EDB6C6 /* FavoritesViewController.swift */; };
+		65E28D80273B317C00EDB6C6 /* FavVehicleCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E28D7F273B317C00EDB6C6 /* FavVehicleCellView.swift */; };
+		65E7C4B6274313F8008611A7 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E7C4B5274313F8008611A7 /* ViewControllerExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65044BAF272C982600A6EF74 /* gdzietentramwaj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gdzietentramwaj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		65044BB2272C982600A6EF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65044BB4272C982600A6EF74 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		65044BB6272C982600A6EF74 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		65044BB9272C982600A6EF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65044BBB272C982700A6EF74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65044BC0272C982700A6EF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65044BCA272C9DBC00A6EF74 /* WarsawVehicleDataObtainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarsawVehicleDataObtainer.swift; sourceTree = "<group>"; };
+		65044BCD272C9DDB00A6EF74 /* VehicleModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VehicleModel.xcdatamodel; sourceTree = "<group>"; };
+		65044BD0272C9ECE00A6EF74 /* VehicleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleData.swift; sourceTree = "<group>"; };
+		6565A6AC27333BEB00F0228B /* VehicleAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleAnnotation.swift; sourceTree = "<group>"; };
+		657374B727349587008DF8E4 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		65E28D7C273B2D0C00EDB6C6 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		65E28D7F273B317C00EDB6C6 /* FavVehicleCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavVehicleCellView.swift; sourceTree = "<group>"; };
+		65E7C4B5274313F8008611A7 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65044BAC272C982600A6EF74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65044BA6272C982500A6EF74 = {
+			isa = PBXGroup;
+			children = (
+				65044BB1272C982600A6EF74 /* gdzietentramwaj */,
+				65044BB0272C982600A6EF74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65044BB0272C982600A6EF74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65044BAF272C982600A6EF74 /* gdzietentramwaj.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65044BB1272C982600A6EF74 /* gdzietentramwaj */ = {
+			isa = PBXGroup;
+			children = (
+				65E28D7E273B316B00EDB6C6 /* view */,
+				65044BCF272C9EBB00A6EF74 /* model */,
+				65044BC9272C98AA00A6EF74 /* ViewControllers */,
+				65044BB2272C982600A6EF74 /* AppDelegate.swift */,
+				65044BB4272C982600A6EF74 /* SceneDelegate.swift */,
+				65044BB8272C982600A6EF74 /* Main.storyboard */,
+				65044BBB272C982700A6EF74 /* Assets.xcassets */,
+				65044BC0272C982700A6EF74 /* Info.plist */,
+				65044BCA272C9DBC00A6EF74 /* WarsawVehicleDataObtainer.swift */,
+				65044BCC272C9DDB00A6EF74 /* VehicleModel.xcdatamodeld */,
+				657374B727349587008DF8E4 /* DataController.swift */,
+				65E7C4B5274313F8008611A7 /* ViewControllerExtensions.swift */,
+			);
+			path = gdzietentramwaj;
+			sourceTree = "<group>";
+		};
+		65044BC9272C98AA00A6EF74 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				65044BB6272C982600A6EF74 /* MapViewController.swift */,
+				65E28D7C273B2D0C00EDB6C6 /* FavoritesViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		65044BCF272C9EBB00A6EF74 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				65044BD0272C9ECE00A6EF74 /* VehicleData.swift */,
+				6565A6AC27333BEB00F0228B /* VehicleAnnotation.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		65E28D7E273B316B00EDB6C6 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				65E28D7F273B317C00EDB6C6 /* FavVehicleCellView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65044BAE272C982600A6EF74 /* gdzietentramwaj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65044BC3272C982700A6EF74 /* Build configuration list for PBXNativeTarget "gdzietentramwaj" */;
+			buildPhases = (
+				65044BAB272C982600A6EF74 /* Sources */,
+				65044BAC272C982600A6EF74 /* Frameworks */,
+				65044BAD272C982600A6EF74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gdzietentramwaj;
+			productName = gdzietentramwaj;
+			productReference = 65044BAF272C982600A6EF74 /* gdzietentramwaj.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65044BA7272C982500A6EF74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					65044BAE272C982600A6EF74 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 65044BAA272C982500A6EF74 /* Build configuration list for PBXProject "gdzietentramwaj" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65044BA6272C982500A6EF74;
+			productRefGroup = 65044BB0272C982600A6EF74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65044BAE272C982600A6EF74 /* gdzietentramwaj */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65044BAD272C982600A6EF74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65044BBC272C982700A6EF74 /* Assets.xcassets in Resources */,
+				65044BBA272C982600A6EF74 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65044BAB272C982600A6EF74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65E7C4B6274313F8008611A7 /* ViewControllerExtensions.swift in Sources */,
+				65044BB7272C982600A6EF74 /* MapViewController.swift in Sources */,
+				65044BCE272C9DDB00A6EF74 /* VehicleModel.xcdatamodeld in Sources */,
+				65044BD1272C9ECE00A6EF74 /* VehicleData.swift in Sources */,
+				65044BCB272C9DBC00A6EF74 /* WarsawVehicleDataObtainer.swift in Sources */,
+				65044BB3272C982600A6EF74 /* AppDelegate.swift in Sources */,
+				657374B827349587008DF8E4 /* DataController.swift in Sources */,
+				6565A6AD27333BEB00F0228B /* VehicleAnnotation.swift in Sources */,
+				65044BB5272C982600A6EF74 /* SceneDelegate.swift in Sources */,
+				65E28D7D273B2D0C00EDB6C6 /* FavoritesViewController.swift in Sources */,
+				65E28D80273B317C00EDB6C6 /* FavVehicleCellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		65044BB8272C982600A6EF74 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65044BB9272C982600A6EF74 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65044BC1272C982700A6EF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65044BC2272C982700A6EF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65044BC4272C982700A6EF74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD6W8QAX8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gdzietentramwaj/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ksionekk.gdzietentramwaj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65044BC5272C982700A6EF74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RD6W8QAX8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = gdzietentramwaj/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ksionekk.gdzietentramwaj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65044BAA272C982500A6EF74 /* Build configuration list for PBXProject "gdzietentramwaj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65044BC1272C982700A6EF74 /* Debug */,
+				65044BC2272C982700A6EF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65044BC3272C982700A6EF74 /* Build configuration list for PBXNativeTarget "gdzietentramwaj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65044BC4272C982700A6EF74 /* Debug */,
+				65044BC5272C982700A6EF74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65044BCC272C9DDB00A6EF74 /* VehicleModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65044BCD272C9DDB00A6EF74 /* VehicleModel.xcdatamodel */,
+			);
+			currentVersion = 65044BCD272C9DDB00A6EF74 /* VehicleModel.xcdatamodel */;
+			path = VehicleModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 65044BA7272C982500A6EF74 /* Project object */;
+}
