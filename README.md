@@ -16,11 +16,12 @@ User can choose favourite tram/bus lines and is able to filter them out on the m
 
 ## Screenshots
 Main view of the application:
-![Simulator Screen Shot - iPod touch (7th generation) - 2021-11-16 at 18 29 11](https://user-images.githubusercontent.com/18012378/142035818-6c548451-5dc3-4d59-bc8c-d56803262a32.png)
+
+<img src="https://user-images.githubusercontent.com/18012378/142035818-6c548451-5dc3-4d59-bc8c-d56803262a32.png" width="250">
 
 Choosing favorite lines:
-![Simulator Screen Shot - iPod touch (7th generation) - 2021-11-16 at 18 29 24](https://user-images.githubusercontent.com/18012378/142035911-507810d8-c10b-44c2-94bf-dea927a1ea8b.png)
 
+<img src="https://user-images.githubusercontent.com/18012378/142035911-507810d8-c10b-44c2-94bf-dea927a1ea8b.png" width="250">
 
 ## Libs used
 None
