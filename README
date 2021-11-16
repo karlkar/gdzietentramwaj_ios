@@ -1,9 +1,0 @@
-Where's that Tram
-
-It's an application that can ease up using public transport in Warsaw, Poland.
-User can see (almost) in real time position of buses and trams in Warsaw.
-Buses and Trams are sending their location to servers every 10 seconds, hence it's "almost" real time positioning.
-
-User can manually refresh the map view to refresh the data. Otherwise data will be refreshed automatically every 10 seconds.
-
-User can choose favourite tram/bus lines and is able to filter them out on the map view.
